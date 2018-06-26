@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gui": "0.5.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-reconciler": "0.12.0",
@@ -10,8 +11,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-yue": "./node_modules/.bin/babel-node --presets react ./src/yue-index.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1"
   }
 }
